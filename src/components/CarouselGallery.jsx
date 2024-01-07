@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React from "react";
 
 export function CarouselGallery() {
   return (
@@ -8,7 +7,11 @@ export function CarouselGallery() {
         <ol className="carousel__viewport">
           <li id="carousel__slide1" tabIndex="0" className="carousel__slide">
             <div className="carousel__snapper">
-              <img src="https://images.immediate.co.uk/production/volatile/sites/2/2020/12/passion-fruit-martini-d07eb8b.jpg?quality=90&resize=556,505" alt="Slide 1" />
+              <img
+                id="galleryImageOne"
+                src="https://wallpaperaccess.com/full/468044.jpg"
+                alt="Slide 1"
+              />
               <a href="#carousel__slide4" className="carousel__prev">
                 Go to last slide
               </a>
@@ -19,7 +22,11 @@ export function CarouselGallery() {
           </li>
           <li id="carousel__slide2" tabIndex="0" className="carousel__slide">
             <div className="carousel__snapper">
-              <img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/07/GettyImages_933801552-6e4a61e.jpg?quality=90&resize=700,466" alt="Slide 2" />
+              <img
+                id="galleryImageTwo"
+                src="https://images.immediate.co.uk/production/volatile/sites/2/2021/07/GettyImages_933801552-6e4a61e.jpg?quality=90&resize=700,466"
+                alt="Slide 2"
+              />
             </div>
             <a href="#carousel__slide1" className="carousel__prev">
               Go to previous slide
@@ -30,7 +37,11 @@ export function CarouselGallery() {
           </li>
           <li id="carousel__slide3" tabIndex="0" className="carousel__slide">
             <div className="carousel__snapper">
-              <img src="https://via.placeholder.com/800x400" alt="Slide 3" />
+              <img
+                id="galleryImageThree"
+                src="https://c4.wallpaperflare.com/wallpaper/472/102/539/old-franch-wine-bottles-high-quality-picture-bottle-cork-lot-2-wine-bottles-wallpaper-preview.jpg"
+                alt="Slide 3"
+              />
             </div>
             <a href="#carousel__slide2" className="carousel__prev">
               Go to previous slide
@@ -41,7 +52,11 @@ export function CarouselGallery() {
           </li>
           <li id="carousel__slide4" tabIndex="0" className="carousel__slide">
             <div className="carousel__snapper">
-              <img src="https://via.placeholder.com/800x400" alt="Slide 4" />
+              <img
+                id="galleryImageFour"
+                src="https://e0.pxfuel.com/wallpapers/565/629/desktop-wallpaper-121744-high-resolution-widescreen-wine-wine-tasting-red-wine-wine-drinks-wine-country.jpg"
+                alt="Slide 4"
+              />
             </div>
             <a href="#carousel__slide3" className="carousel__prev">
               Go to previous slide
