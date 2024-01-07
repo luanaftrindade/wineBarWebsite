@@ -12,9 +12,9 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
+    <>     
+     <NavBar />
       <Header />
-      <NavBar />
       <MainPage />
       <CarouselGallery />
     </>

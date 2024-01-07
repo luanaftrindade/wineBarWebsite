@@ -1,5 +1,6 @@
 export function MainPage() {
   return (
+    
     <div className="mainPage">
       <div className="mainPageFirstTitleDiv">
         <h1 className="mainPageFirstTitle">Welcome to our website, </h1>

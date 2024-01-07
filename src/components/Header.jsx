@@ -1,3 +1,5 @@
+import { CarouselGallery } from "./CarouselGallery";
+
 export function Header() {
   return (
     <div className="header">
