@@ -1,3 +1,5 @@
+// create nav bar with map 
+
 export function NavBar() {
   return (
       <div className="navBar">
