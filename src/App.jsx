@@ -16,6 +16,7 @@ import { OurChefs } from "./components/OurChefs.jsx";
 import { Reviews } from "./components/Reviews.jsx";
 import { Reservation } from "./components/Reservation.jsx";
 import { Gallery } from "./components/Gallery.jsx";
+import { Contact } from "./components/Contact.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -93,7 +94,7 @@ function App() {
             path="/contactUs"
             element={
               <>
-                <Menu />
+                <Contact />
                 <MainPage />
               </>
             }
