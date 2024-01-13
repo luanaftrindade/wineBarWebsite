@@ -1,30 +1,32 @@
-// create nav bar with map
+import React from "react";
+import { Link } from "react-router-dom";
 
 export function NavBar() {
   const navItems = [
-    { label: "Home", href: "#home", className: "home" },
-    { label: "About", href: "#aboutUs", className: "about" },
-    { label: "Menu", href: "#ourDrinksMenu", className: "menu" },
-    { label: "Our Chefs", href: "#ourChefs", className: "chefs" },
-    { label: "Reviews", href: "#reviews", className: "reviews" },
+    { label: "Home", link: "/home", className: "home" },
+    { label: "About", link: "/aboutUs", className: "about" },
+    { label: "Menu", link: "/menu", className: "menu" },
+    { label: "Our Chefs", link: "/ourChefs", className: "chefs" },
+    { label: "Reviews", link: "/reviews", className: "reviews" },
     {
       label: "Make a Reservation",
-      href: "#makeAReservation",
+      link: "/makeAReservation",
       className: "reservations",
     },
-    { label: "Gallery", href: "#gallery", className: "galleryNavBar" },
-    { label: "Contact", href: "#contactUs", className: "contact" },
+    { label: "Gallery", link: "/gallery", className: "galleryNavBar" },
+    { label: "Contact", link: "/contactUs", className: "contact" },
   ];
 
   return (
     <div className="navBar">
-      <a href="#companyLogo" className="logo">
+      <p className="logo">
         CompanyLogo
-      </a>
+      </p>
+
       {navItems.map((item) => (
-        <a key={item.label} className={item.className} href={item.href}>
-          {item.label}
-        </a>
+        <div className={item.className}>
+          <Link to={item.link}>{item.label}</Link>
+        </div>
       ))}
       <button className="makeAReservationMainButton">Book a Table</button>
     </div>

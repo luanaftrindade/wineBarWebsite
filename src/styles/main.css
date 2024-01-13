@@ -101,17 +101,31 @@ html {
 .navBar {
   overflow: hidden;
   position: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
   font-family: "Kreon", serif;
   width: 100%;
-  color: #fff;
+  color: #fff;  
   background-color: #0c062c11;
+}
+
+.home, 
+.about, 
+.menu, 
+.chefs,
+.reviews, 
+.reservations, 
+.galleryNavBar, 
+.contact {
+  margin: 2%;
 }
 
 /* Style the navbar links */
 .navBar a {
   color: rgb(241, 235, 235);
   text-align: center;
-  padding: 2%;
   text-decoration: none;
   font-size: 1.5em;
   transition: color 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
@@ -119,12 +133,12 @@ html {
 
 /* Change the background color on mouse-over */
 .navBar a:hover {
-  color: rgb(226, 221, 221);
-  box-shadow: inset 0 -40px 0 0 #0c062cce;
+  color: rgb(19, 4, 61);
+  box-shadow: inset  200px 0 0 0  #e7ebf0c2;
 }
 
 /* Style the logo link */
-.navBar a.logo {
+.logo {
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -137,7 +151,8 @@ html {
 
 /* MainPage component styling starts here */
 .mainPage {
-  font-family: 'Grandstander', cursive;}
+  font-family: "Grandstander", cursive;
+}
 
 /* 
 
@@ -145,7 +160,6 @@ Add media queries for responsiveness - when the screen is 500px wide or less, st
 Need to see more informations to do that with some specific components 
 
 */
-
 
 @media screen and (max-width: 500px) {
   .navBar a {
