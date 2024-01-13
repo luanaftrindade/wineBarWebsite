@@ -12,6 +12,7 @@ import { GalleryWithAddEffect } from "./components/GalleryWithAddEffect.jsx";
 import { CarouselGallery } from "./components/CarouselGallery.jsx";
 import { AboutUs } from "./components/AboutUs.jsx";
 import { Menu } from "./components/Menu.jsx";
+import { OurChefs } from "./components/OurChefs.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -39,8 +40,61 @@ function App() {
               </>
             }
           />
-          <Route path="/aboutUs" element={<AboutUs/>} />
-          <Route path="/menu" element={<><Menu /><MainPage/></>} />
+          <Route path="/aboutUs" element={<AboutUs />} />
+          <Route
+            path="/menu"
+            element={
+              <>
+                <Menu />
+                <MainPage />
+              </>
+            }
+          />
+          <Route
+            path="/ourChefs"
+            element={
+              <>
+                <OurChefs />
+                <MainPage />
+              </>
+            }
+          />
+          <Route
+            path="/reviews"
+            element={
+              <>
+                <Menu />
+                <MainPage />
+              </>
+            }
+          />
+          <Route
+            path="/makeAReservation"
+            element={
+              <>
+                <Menu />
+                <MainPage />
+              </>
+            }
+          />
+          <Route
+            path="/gallery"
+            element={
+              <>
+                <Menu />
+                <MainPage />
+              </>
+            }
+          />
+          <Route
+            path="/contactUs"
+            element={
+              <>
+                <Menu />
+                <MainPage />
+              </>
+            }
+          />
         </Routes>
       </div>
     </>
