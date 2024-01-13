@@ -1,36 +1,32 @@
-// create nav bar with map 
+// create nav bar with map
 
 export function NavBar() {
+  const navItems = [
+    { label: "Home", href: "#home", className: "home" },
+    { label: "About", href: "#aboutUs", className: "about" },
+    { label: "Menu", href: "#ourDrinksMenu", className: "menu" },
+    { label: "Our Chefs", href: "#ourChefs", className: "chefs" },
+    { label: "Reviews", href: "#reviews", className: "reviews" },
+    {
+      label: "Make a Reservation",
+      href: "#makeAReservation",
+      className: "reservations",
+    },
+    { label: "Gallery", href: "#gallery", className: "galleryNavBar" },
+    { label: "Contact", href: "#contactUs", className: "contact" },
+  ];
+
   return (
-      <div className="navBar">
-          <a href="#default" className="logo">
-            CompanyLogo
-          </a>
-          <a className="home" href="#home">
-            Home
-          </a>
-          <a className="about" href="#aboutUs">
-            About
-          </a>
-          <a className="menu" href="#ourDrinksMenu">
-            Menu
-          </a>
-          <a className="chefs" href="#ourChefs">
-            Our Chefs
-          </a>
-          <a className="reviews" href="#reviews">
-            Reviews
-          </a>
-          <a className="reservations" href="#makeAReservation">
-            Make a Reservation
-          </a>
-          <a className="galleryNavBar" href="#gallery">
-            Gallery
-          </a>
-          <a className="contact" href="#contactUs">
-            Contact
-          </a>
-          <button className="makeAReservationMainButton">Book a Table</button>
-        </div>
+    <div className="navBar">
+      <a href="#companyLogo" className="logo">
+        CompanyLogo
+      </a>
+      {navItems.map((item) => (
+        <a key={item.label} className={item.className} href={item.href}>
+          {item.label}
+        </a>
+      ))}
+      ;<button className="makeAReservationMainButton">Book a Table</button>
+    </div>
   );
 }
