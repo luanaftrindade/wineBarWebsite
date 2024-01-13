@@ -11,6 +11,7 @@ import { MainPage } from "./components/MainPage.jsx";
 import { GalleryWithAddEffect } from "./components/GalleryWithAddEffect.jsx";
 import { CarouselGallery } from "./components/CarouselGallery.jsx";
 import { AboutUs } from "./components/AboutUs.jsx";
+import { Menu } from "./components/Menu.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -39,7 +40,7 @@ function App() {
             }
           />
           <Route path="/aboutUs" element={<AboutUs/>} />
-          <Route path="/reviews" element={<GalleryWithAddEffect />} />
+          <Route path="/menu" element={<><Menu /><MainPage/></>} />
         </Routes>
       </div>
     </>
