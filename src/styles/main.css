@@ -31,16 +31,19 @@ html {
 .header {
   display: flex;
   flex-direction: column;
+  margin-top: 2%;
 }
 
 .barNameHeader {
-  color: #ddddddd8;
+  color: #faedd69d;
   font-size: 6em;
   font-family: "Grandstander", cursive;
 }
 
 .textHeaderInformation {
   font-family: "Grandstander", cursive;
+  color: #e2e8f0;
+  font-size: 2em;
 }
 
 .buttonsHeaderSection {
@@ -100,7 +103,6 @@ html {
   position: fixed;
   font-family: "Kreon", serif;
   width: 100%;
-  margin-top: -4%;
   color: #fff;
   background-color: #0c062c11;
 }

@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Coming+Soon&family=Grandstander:wght@200&family=Kreon&family=Libre+Barcode+39+Text&family=Londrina+Outline&family=Londrina+Solid:wght@300&family=Rampart+One&family=Yusei+Magic&family=Zilla+Slab+Highlight&display=swap");
 
 /*
-  font-family: "Bebas Neue", sans-serif;
+
+font-family: "Bebas Neue", sans-serif;
 font-family: 'Bubblegum Sans', sans-serif;
 font-family: 'Coming Soon', cursive;
 font-family: 'Grandstander', cursive; // yes 
@@ -15,4 +16,33 @@ font-family: 'Zilla Slab Highlight', serif;
 
 */
 
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  background-color:#0c062c36;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10% / 50%;
+}
 
+.mainPageFirstTitle {
+  font-family: "Grandstander", sans-serif;
+  font-size: 4em;
+  color: #f7d5b5;
+}
+
+.mainPageSecondTitle {
+  font-size: 2.5em;
+  color: #ffffffd3;
+  font-family: "Bubblegum Sans";
+
+}
+
+.mainPageFirstTextDiv {
+  font-size: 1.5em;
+  color: #e9e6e6;
+  font-family: "Bubblegum Sans";
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+}
