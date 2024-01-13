@@ -17,6 +17,7 @@ function App() {
       <Header />
       <MainPage />
       <CarouselGallery />
+      <GalleryWithAddEffect />
     </>
   );
 }
