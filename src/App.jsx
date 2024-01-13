@@ -14,6 +14,7 @@ import { AboutUs } from "./components/AboutUs.jsx";
 import { Menu } from "./components/Menu.jsx";
 import { OurChefs } from "./components/OurChefs.jsx";
 import { Reviews } from "./components/Reviews.jsx";
+import { Reservation } from "./components/Reservation.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -73,7 +74,7 @@ function App() {
             path="/makeAReservation"
             element={
               <>
-                <Menu />
+                <Reservation />
                 <MainPage />
               </>
             }
