@@ -145,7 +145,7 @@ html {
 
 /* Style the active link*/
 .navBar a.active {
-  background-color: dodgerblue;
+  background-color: rgba(102, 133, 163, 0.568);
   color: white;
 }
 

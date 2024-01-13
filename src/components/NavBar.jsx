@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export function NavBar() {
   const navItems = [
@@ -17,15 +17,18 @@ export function NavBar() {
     { label: "Contact", link: "/contactUs", className: "contact" },
   ];
 
+  // Get the current pathname using useLocation
+  const { pathname } = useLocation();
+
   return (
     <div className="navBar">
-      <p className="logo">
-        CompanyLogo
-      </p>
+      <p className="logo">CompanyLogo</p>
 
       {navItems.map((item) => (
-        <div className={item.className}>
-          <Link to={item.link}>{item.label}</Link>
+        <div key={item.label} className={item.className}>
+          <Link to={item.link} className={pathname === item.link ? "active" : ""}>
+            {item.label}
+          </Link>
         </div>
       ))}
       <button className="makeAReservationMainButton">Book a Table</button>
