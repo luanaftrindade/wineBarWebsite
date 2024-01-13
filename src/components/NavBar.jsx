@@ -26,7 +26,7 @@ export function NavBar() {
           {item.label}
         </a>
       ))}
-      ;<button className="makeAReservationMainButton">Book a Table</button>
+      <button className="makeAReservationMainButton">Book a Table</button>
     </div>
   );
 }

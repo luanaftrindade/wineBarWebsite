@@ -1,6 +1,7 @@
 import "./styles/main.css";
-import "./styles/galleryWithAddEffect.css";
-import "./styles/carouselGallery.css";
+import "./styles/galleryWithAddEffectComponent.css";
+import "./styles/carouselGalleryComponent.css";
+import "./styles/mainPageComponent.css";
 import { useState } from "react";
 import { Header } from "./components/Header.jsx";
 import { NavBar } from "./components/NavBar.jsx";

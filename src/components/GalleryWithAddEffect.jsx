@@ -18,7 +18,6 @@ export function GalleryWithAddEffect() {
         {galleryImages.map((item) => (
           <img src={item.src} alt={item.alt}></img>
         ))}
-        ;
       </div>
     </div>
   );
