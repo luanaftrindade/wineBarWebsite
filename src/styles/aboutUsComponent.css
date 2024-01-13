@@ -1,0 +1,13 @@
+.aboutUsDiv {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50%;
+
+}
+
+.aboutUsTextDiv{
+    margin-top: -40%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(240, 248, 255, 0.158);
+}
