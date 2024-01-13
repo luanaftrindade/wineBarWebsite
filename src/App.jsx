@@ -16,32 +16,32 @@ function App() {
   return (
     <>
       <NavBar />
-      <Header />
-      <MainPage />
-      <CarouselGallery />
-      <GalleryWithAddEffect />
-    </>
-  );
-}
-
-
-/* 
-function App() {
-  return (
-   <>
-    <Navbar/>
       <div>
-    <Routes>        
-      <Route path="/"  element={<Stocks/>} />
-      <Route path="/favourites"  element={<Favourites />}/>
-      <Route path="/cart"  element={<Cart/>}/>
-    </Routes>
-    </div>
+        <Routes>
+          <Route
+            path=""
+            element={
+              <>
+                <Header />
+                <MainPage />
+              </>
+            }
+          />
+          <Route
+            path="/home"
+            element={
+              <>
+                <Header />
+                <MainPage />
+              </>
+            }
+          />
+          <Route path="/aboutUs" element={<CarouselGallery />} />
+          <Route path="/reviews" element={<GalleryWithAddEffect />} />
+        </Routes>
+      </div>
     </>
-   
   );
 }
-*/
-
 
 export default App;
