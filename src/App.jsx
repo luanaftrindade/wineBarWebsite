@@ -13,6 +13,7 @@ import { CarouselGallery } from "./components/CarouselGallery.jsx";
 import { AboutUs } from "./components/AboutUs.jsx";
 import { Menu } from "./components/Menu.jsx";
 import { OurChefs } from "./components/OurChefs.jsx";
+import { Reviews } from "./components/Reviews.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -63,7 +64,7 @@ function App() {
             path="/reviews"
             element={
               <>
-                <Menu />
+                <Reviews />
                 <MainPage />
               </>
             }

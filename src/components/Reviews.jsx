@@ -1,9 +1,10 @@
 import { Header } from "./Header";
 
-export function Menu() {
+export function Reviews() {
   return (
     <>
       <Header />
+      <h1>Reviews Component is here!</h1>
     </>
   );
 }
