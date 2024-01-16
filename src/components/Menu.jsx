@@ -3,7 +3,7 @@ import { Header } from "./Header";
 export function Menu() {
   return (
     <>
-      <Header />
+      <h1>ADD HERE</h1>
     </>
   );
 }

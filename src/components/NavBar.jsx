@@ -4,9 +4,9 @@ import { Link, useLocation } from "react-router-dom";
 export function NavBar() {
   const navItems = [
     { label: "Home", link: "/home", className: "home" },
-    { label: "About", link: "/aboutUs", className: "about" },
+    { label: "About", link: "/about", className: "about" },
     { label: "Menu", link: "/menu", className: "menu" },
-    { label: "Our Chefs", link: "/ourChefs", className: "chefs" },
+    { label: "Meet the Team", link: "/ourTeam", className: "team" },
     { label: "Reviews", link: "/reviews", className: "reviews" },
     {
       label: "Make a Reservation",

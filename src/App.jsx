@@ -10,7 +10,7 @@ import { NavBar } from "./components/NavBar.jsx";
 import { MainPage } from "./components/MainPage.jsx";
 import { GalleryWithAddEffect } from "./components/GalleryWithAddEffect.jsx";
 import { CarouselGallery } from "./components/CarouselGallery.jsx";
-import { AboutUs } from "./components/AboutUs.jsx";
+import { About } from "./components/About.jsx";
 import { Menu } from "./components/Menu.jsx";
 import { OurChefs } from "./components/OurChefs.jsx";
 import { Reviews } from "./components/Reviews.jsx";
@@ -30,7 +30,7 @@ function App() {
             path=""
             element={
               <>
-                <Header />
+                <Header>Wine Bar</Header>
                 <MainPage />
               </>
             }
@@ -39,26 +39,34 @@ function App() {
             path="/home"
             element={
               <>
-                <Header />
+                <Header>Wine Bar</Header>
                 <MainPage />
               </>
             }
           />
-          <Route path="/aboutUs" element={<AboutUs />} />
+          <Route
+            path="/about"
+            element={
+              <>
+                <Header>About Us</Header>
+                <About />
+              </>
+            }
+          />
           <Route
             path="/menu"
             element={
               <>
-                <Menu />
+                <Header>Menu</Header>
                 <MainPage />
               </>
             }
           />
           <Route
-            path="/ourChefs"
+            path="/ourTeam"
             element={
               <>
-                <OurChefs />
+                <Header>Meet the Team</Header>
                 <MainPage />
               </>
             }
@@ -67,7 +75,7 @@ function App() {
             path="/reviews"
             element={
               <>
-                <Reviews />
+                <Header>See the Reviews</Header>
                 <MainPage />
               </>
             }
@@ -76,7 +84,7 @@ function App() {
             path="/makeAReservation"
             element={
               <>
-                <Reservation />
+                <Header>Book a Table</Header>
                 <MainPage />
               </>
             }
@@ -85,7 +93,7 @@ function App() {
             path="/gallery"
             element={
               <>
-                <Gallery/>
+                <Header>See the Gallery</Header>
                 <MainPage />
               </>
             }
@@ -94,7 +102,7 @@ function App() {
             path="/contactUs"
             element={
               <>
-                <Contact />
+                <Header>Contact Us</Header>
                 <MainPage />
               </>
             }

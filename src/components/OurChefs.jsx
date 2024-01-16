@@ -1,6 +1,6 @@
 import { Header } from "./Header"
 
 export function OurChefs(){
-    return (<><Header/>
+    return (<>
     <h1>OurChefComponentHere</h1></>);
 }

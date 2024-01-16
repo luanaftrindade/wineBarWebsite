@@ -1,11 +1,12 @@
 import { CarouselGallery } from "./CarouselGallery";
 
-export function AboutUs() {
+export function About() {
+
   return (
     <div className="aboutUsDiv">
     
       <div className="aboutUsTextDiv">  
-      <h1>About Us</h1>  
+      <h1>About </h1>  
         <p>
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
