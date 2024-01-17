@@ -1,4 +1,4 @@
-import { FormReservation } from "./FormReservation";
+import { FormReservation } from "./formReservation/FormReservation";
 import { Header } from "./Header";
 
 export function Reservation() {
