@@ -1,13 +1,10 @@
 import * as React from "react";
 import { useState } from "react";
-import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
-import dayjs from "dayjs";
 import { FirstNameInput } from "./FirstNameInput";
 import { LastNameInput } from "./LastNameInput";
 import { PhoneNumberInput } from "./PhoneNumberInput";
+import { NumberOfPeopleSelect } from "./NumberOfPeopleSelect";
+import { DateTimeComponent } from "./DateTimeComponent";
 
 export function FormReservation() {
   const [inputs, setInputs] = useState({});
@@ -31,31 +28,15 @@ export function FormReservation() {
   return (
     <div>
       <form className="formReservation" onSubmit={handleSubmit}>
-        <FirstNameInput />
-        <LastNameInput />
-        <PhoneNumberInput />
-        <label>
-          Do you want a reservation for how many people?
-          <select
-            value={howManyPeople}
-            onChange={handleChangeReservationNumber}
-          >
-            {["One", "Two", "Three", "Four", "Five", "Six"].map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label>
-          Select the date:
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DemoContainer components={["DateTimePicker"]}>
-              <DateTimePicker label="Basic date time picker" />
-            </DemoContainer>
-          </LocalizationProvider>
-        </label>
+        <FirstNameInput value={inputs.firstName} onChange={handleChange} />
+        <LastNameInput value={inputs.LastName} onChange={handleChange} />
+        <PhoneNumberInput value={inputs.phoneNumber} onChange={handleChange} />
+        <NumberOfPeopleSelect
+          value={howManyPeople}
+          onChange={handleChangeReservationNumber}
+        />
 
+        <DateTimeComponent />
         <input type="submit" />
       </form>
     </div>
