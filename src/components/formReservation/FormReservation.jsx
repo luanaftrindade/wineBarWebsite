@@ -22,7 +22,7 @@ export function FormReservation() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(inputs);
+    alert(JSON.stringify(inputs));
   };
 
   return (
