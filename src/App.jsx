@@ -3,6 +3,7 @@ import "./styles/galleryWithAddEffectComponent.css";
 import "./styles/carouselGalleryComponent.css";
 import "./styles/mainPageComponent.css";
 import "./styles/aboutUsComponent.css";
+import "./styles/FormReservationComponent.css";
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import { Header } from "./components/Header.jsx";
@@ -85,7 +86,7 @@ function App() {
             element={
               <>
                 <Header>Book a Table</Header>
-                <MainPage />
+                <Reservation></Reservation>
               </>
             }
           />
