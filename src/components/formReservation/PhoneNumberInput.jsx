@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 
-// regex to match numbers between 1 and 10 digits long
-const validPhoneNumber = /^\d{1,10}$/;
+// regex to match numbers between 1 and 9 digits 
+const validPhoneNumber = /^\d{1,9}$/;
 
 export function PhoneNumberInput() {
-  // declare current state and state setter
   const [phone, setPhone] = useState("");
   const handleChange = ({ target }) => {
     const newPhone = target.value;

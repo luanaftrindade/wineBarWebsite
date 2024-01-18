@@ -1,4 +1,5 @@
 import { CarouselGallery } from "./CarouselGallery";
+import { HomeDelivery } from "./homeDeliveryComponents/HomeDelivery";
 
 export function About() {
 
@@ -26,7 +27,7 @@ export function About() {
           versions from the 1914 translation by H. Rackham.
         </p>
       </div>
-      <CarouselGallery/>
+   <HomeDelivery /> 
       
   </div>
   );
