@@ -1,7 +1,5 @@
 import { FormReservation } from "./formReservation/FormReservation";
-import { Header } from "./Header";
 import "../styles/FormReservationComponent.css";
-import { FooterComponent } from "./FooterComponent";
 
 export function Reservation() {
   return (

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxygen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Coming+Soon&family=Grandstander:wght@200&family=Kreon&family=Libre+Barcode+39+Text&family=Londrina+Outline&family=Londrina+Solid:wght@300&family=Rampart+One&family=Yusei+Magic&family=Zilla+Slab+Highlight&display=swap");
+
+.footer-container {
+  background-color: rgba(19, 4, 61, 0.13);
+  color: #fff;
+  padding: 1%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.footer-item {
+  display: inline-block;
+  margin-right: 5%;
+  font-family: "Kreon", serif;
+  font-size: 1em;
+}
+
+.footer-item:last-child {
+  margin-right: 0;
+}
+
+.footer-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+    color: rgb(19, 4, 61);
+    box-shadow: inset  200px 0 0 0  #e7ebf0c2;
+}

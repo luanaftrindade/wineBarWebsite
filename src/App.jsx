@@ -33,7 +33,6 @@ function App() {
               <>
                 <Header>Wine Bar</Header>
                 <MainPage />
-                <FooterComponent />
               </>
             }
           />
@@ -43,6 +42,7 @@ function App() {
               <>
                 <Header>Wine Bar</Header>
                 <MainPage />
+                <FooterComponent />
               </>
             }
           />
@@ -52,6 +52,7 @@ function App() {
               <>
                 <Header>About Us</Header>
                 <About />
+                <FooterComponent />
               </>
             }
           />
@@ -61,6 +62,7 @@ function App() {
               <>
                 <Header>Menu</Header>
                 <MainPage />
+                <FooterComponent />
               </>
             }
           />
@@ -70,6 +72,7 @@ function App() {
               <>
                 <Header>Meet the Team</Header>
                 <MainPage />
+                <FooterComponent />
               </>
             }
           />
@@ -79,6 +82,7 @@ function App() {
               <>
                 <Header>See the Reviews</Header>
                 <MainPage />
+                <FooterComponent />
               </>
             }
           />
@@ -88,6 +92,7 @@ function App() {
               <>
                 <Header>Book a Table</Header>
                 <Reservation></Reservation>
+                <FooterComponent />
               </>
             }
           />
@@ -97,6 +102,7 @@ function App() {
               <>
                 <Header>See the Gallery</Header>
                 <MainPage />
+                <FooterComponent />
               </>
             }
           />
@@ -106,6 +112,7 @@ function App() {
               <>
                 <Header>Contact Us</Header>
                 <MainPage />
+                <FooterComponent />
               </>
             }
           />
