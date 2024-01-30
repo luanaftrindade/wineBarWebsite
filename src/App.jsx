@@ -3,7 +3,6 @@ import "./styles/galleryWithAddEffectComponent.css";
 import "./styles/carouselGalleryComponent.css";
 import "./styles/mainPageComponent.css";
 import "./styles/aboutUsComponent.css";
-import "./styles/FormReservationComponent.css";
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import { Header } from "./components/Header.jsx";
@@ -18,6 +17,7 @@ import { Reviews } from "./components/Reviews.jsx";
 import { Reservation } from "./components/Reservation.jsx";
 import { Gallery } from "./components/Gallery.jsx";
 import { Contact } from "./components/Contact.jsx";
+import { FooterComponent } from "./components/FooterComponent.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -33,6 +33,7 @@ function App() {
               <>
                 <Header>Wine Bar</Header>
                 <MainPage />
+                <FooterComponent />
               </>
             }
           />

@@ -5,11 +5,11 @@ import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
 
 export function DateTimeComponent() {
   return (
-    <label>
+    <label className="dateTimeComponent">
       Select the date:
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DemoContainer components={["DateTimePicker"]}>
-          <DateTimePicker label="Basic date time picker" />
+          <DateTimePicker label="Select the date" />
         </DemoContainer>
       </LocalizationProvider>
     </label>

@@ -26,7 +26,7 @@ export function FormReservation() {
   };
 
   return (
-    <div>
+    <>
       <form className="formReservation" onSubmit={handleSubmit}>
         <FirstNameInput value={inputs.firstName} onChange={handleChange} />
         <LastNameInput value={inputs.LastName} onChange={handleChange} />
@@ -39,6 +39,6 @@ export function FormReservation() {
         <DateTimeComponent />
         <input type="submit" />
       </form>
-    </div>
+    </>
   );
 }
